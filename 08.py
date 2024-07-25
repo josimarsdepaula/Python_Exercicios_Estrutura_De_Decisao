@@ -1,3 +1,7 @@
+#Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, 
+# sabendo que a decisão é sempre pelo mais barato.
+
+
 prod1 = float(input("Informe o valor do Primeiro produto: "))
 prod2 = float(input("Informe o valor do Segundo produto: "))
 prod3 = float(input("Informe o valor do Terceiro produto: "))

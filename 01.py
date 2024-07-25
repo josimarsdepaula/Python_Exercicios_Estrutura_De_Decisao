@@ -1,3 +1,5 @@
+print("Faça um Programa que peça dois números e imprima o maior deles.")
+
 numero1 = int(input("Informe o primeiro número inteiro:"))
 numero2 = int(input("Informe o Segundo número inteiro:"))
 
