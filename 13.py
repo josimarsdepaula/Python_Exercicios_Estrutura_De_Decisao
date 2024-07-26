@@ -1,18 +1,16 @@
 numero = int(input("Informe um número referente ao dia da semana:"))
 
-if numero == 1:
-    print("Domingo")
-elif numero == 2:
-    print("Segunda-feira")
-elif numero == 3:
-    print("Terça-feira")
-elif numero == 4:
-    print("Quarta-feira")
-elif numero == 5:
-    print("Quinta-feira")
-elif numero == 6:
-    print("Sexta-feira")
-elif numero == 7:
-    print("Sábado")
+dias_da_semana = {
+    1:"Domingo",
+    2:"Segunda-feira",
+    3:"Terça-feira",
+    4:"Quarta-feira",
+    5:"Quinta-feira",
+    6:"Sexta-feira",
+    7:"Sábado"
+}
+
+if 1 <= numero <= 7:
+    print(f"O dia correspondente é: {dias_da_semana[numero]}")
 else:
     print("Valor Invalido! Insira novamente:")
