@@ -1,4 +1,4 @@
-import time
+import time #para medir a eficiência do código
 
 valor_hora = float(input("Informa o valor da hora trabalhada: "))
 hora_trabalhada = float(input("Informe a quantidade de horas trabalhadas: "))

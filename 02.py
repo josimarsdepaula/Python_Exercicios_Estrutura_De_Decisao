@@ -1,4 +1,4 @@
-print("Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.")
+print("Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.")-5
 numero = int(input("Informe um número:"))
 
 if numero > 0:
