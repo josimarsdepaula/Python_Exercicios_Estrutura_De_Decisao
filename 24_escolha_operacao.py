@@ -2,7 +2,12 @@ def par_ou_impar (resultado):
     return "Par" if (resultado % 2) == 0 else "Ímpar"
 
 def positivo_ou_negativo(resultado):
-    return "Positivo" if resultado > 0 else "Negativo"
+    if resultado > 0:
+        return "Positivo"
+    elif resultado < 0:
+        return "Negativo"
+    else:
+        return "Zero ou Nulo"
 
 def inteiro_ou_decimal(resultado):
     return "Inteiro" if resultado == round(resultado) else "Decimal"
@@ -29,11 +34,19 @@ if operacao == 1:
 elif operacao == 2:
     resultado = num1 - num2
 elif operacao == 3:
-    resultado = num1 / num2
-else:
+    if num2 != 0:
+        resultado = num1 / num2
+    else:
+        print("Erro. Divisão por Zero não é permitida!")
+        resultado = None
+elif operacao == 4:
     resultado = num1 * num2
+else:
+    print("Operação inválida.")
+    resultado = None
 
-print(f"\nO resultado da Operação: {lista_operacao[operacao]} é {resultado:.2f}")
-print(f"Esse valor é: {par_ou_impar(resultado)}")
-print(f"Esse valor é: {positivo_ou_negativo(resultado)}")
-print(f"Esse valor é: {inteiro_ou_decimal(resultado)}")
+if resultado is not None: 
+    print(f"\nO resultado da Operação: {lista_operacao[operacao]} é {resultado:.2f}")
+    print(f"Esse valor é: {par_ou_impar(resultado)}")
+    print(f"Esse valor é: {positivo_ou_negativo(resultado)}")
+    print(f"Esse valor é: {inteiro_ou_decimal(resultado)}")
